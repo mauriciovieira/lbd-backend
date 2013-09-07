@@ -35,6 +35,16 @@ GEM
     factory_girl_rails (4.2.1)
       factory_girl (~> 4.2.0)
       railties (>= 3.0.0)
+    faraday (0.8.8)
+      multipart-post (~> 1.2.0)
+    faraday_middleware (0.9.0)
+      faraday (>= 0.7.4, < 0.9)
+    foursquare2 (1.9.7)
+      faraday (~> 0.8)
+      faraday_middleware (>= 0.8)
+      hashie (>= 1.0, < 3.0.0)
+    geocoder (1.1.8)
+    hashie (2.0.5)
     hike (1.2.3)
     i18n (0.6.5)
     jbuilder (1.5.1)
@@ -46,6 +56,7 @@ GEM
     mime-types (1.25)
     minitest (4.7.5)
     multi_json (1.7.9)
+    multipart-post (1.2.0)
     pg (0.16.0)
     polyglot (0.3.3)
     rack (1.5.2)
@@ -99,6 +110,8 @@ PLATFORMS
 
 DEPENDENCIES
   factory_girl_rails
+  foursquare2 (~> 1.9.4)
+  geocoder
   jbuilder (~> 1.2)
   pg
   rails (= 4.0.0)
