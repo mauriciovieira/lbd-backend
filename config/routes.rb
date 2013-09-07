@@ -1,5 +1,5 @@
 ToDrink::Application.routes.draw do
 
-  resources :bars, only: [:index]
+  resources :places, only: [:index]
 
 end
