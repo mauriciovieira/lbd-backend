@@ -28,6 +28,7 @@ GEM
     arel (4.0.0)
     atomic (1.1.13)
     builder (3.1.4)
+    database_cleaner (1.1.1)
     diff-lcs (1.2.4)
     erubis (2.7.0)
     factory_girl (4.2.0)
@@ -87,6 +88,8 @@ GEM
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
       rspec-mocks (~> 2.14.0)
+    shoulda-matchers (2.3.0)
+      activesupport (>= 3.0.0)
     sprockets (2.10.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -109,6 +112,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  database_cleaner
   factory_girl_rails
   foursquare2 (~> 1.9.4)
   geocoder
@@ -116,3 +120,4 @@ DEPENDENCIES
   pg
   rails (= 4.0.0)
   rspec-rails (~> 2.0)
+  shoulda-matchers

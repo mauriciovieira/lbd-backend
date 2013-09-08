@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130907234428) do
+ActiveRecord::Schema.define(version: 20130908134246) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,5 +29,17 @@ ActiveRecord::Schema.define(version: 20130907234428) do
     t.decimal "lat"
     t.decimal "lng"
   end
+
+  create_table "reports", force: true do |t|
+    t.integer "place_id"
+    t.integer "temperature_id"
+    t.integer "brand_id"
+    t.integer "recipient_id"
+  end
+
+  add_index "reports", ["brand_id"], name: "index_reports_on_brand_id", using: :btree
+  add_index "reports", ["place_id"], name: "index_reports_on_place_id", using: :btree
+  add_index "reports", ["recipient_id"], name: "index_reports_on_recipient_id", using: :btree
+  add_index "reports", ["temperature_id"], name: "index_reports_on_temperature_id", using: :btree
 
 end
