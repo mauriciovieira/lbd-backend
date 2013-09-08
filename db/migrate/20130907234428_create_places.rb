@@ -4,8 +4,6 @@ class CreatePlaces < ActiveRecord::Migration
       t.string :name
       t.decimal :lat
       t.decimal :lng
-
-      t.timestamps
     end
   end
 end

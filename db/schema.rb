@@ -25,11 +25,9 @@ ActiveRecord::Schema.define(version: 20130907234428) do
   end
 
   create_table "places", force: true do |t|
-    t.string   "name"
-    t.decimal  "lat"
-    t.decimal  "lng"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string  "name"
+    t.decimal "lat"
+    t.decimal "lng"
   end
 
 end
